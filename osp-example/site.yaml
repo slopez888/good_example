@@ -1,10 +1,11 @@
-- hosts: jumpbox
+- hosts: localhost
 #  become: yes
-  roles:
-     - osp-network
-     - osp-keypair
-     - osp-securitygroup
-     - osp-flavor
+#  roles commented out since resources were created with prakhars osp example
+#  roles:
+#     - osp-network
+#     - osp-keypair
+#     - osp-securitygroup
+#     - osp-flavor
   tasks:
 ##Create Fronend Instance
   - name: Create frontend instance
